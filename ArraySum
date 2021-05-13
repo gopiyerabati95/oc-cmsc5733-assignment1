@@ -7,3 +7,10 @@ for n in range(num):
   numbers = int(input())
   lst.append(numbers)
 print("Sum:", sum(lst))
+
+def arrayProduct():
+# Multiply elements one by one
+    result = 1
+    for x in myList:
+         result = result * x
+    return result
