@@ -1,16 +1,23 @@
-def arraySum():
-#Python program to add all the array elements using the built-in function
-lst = []
-num = int(input("Enter the size of the array: "))
-print("Enter array elements: ")
-for n in range(num):
-  numbers = int(input())
-  lst.append(numbers)
-print("Sum:", sum(lst))
+def arraySum(lst):
+    # Python program to add all the array elements using the built-in function
+    return(sum(lst))
 
-def arrayProduct():
-# Multiply elements one by one
-    result = 1
-    for x in myList:
-         result = result * x
-    return result
+
+def arrayProduct(lst):
+    # Multiply elements one by one
+    product = 1
+    for x in lst:
+        product = product * x
+    return product
+
+def main():
+    lst = []
+    n = int(input("Enter the no.of elements : "))
+    for i in range(n):
+        ele = int(input())
+        lst.append(ele)
+    print(str(arraySum(lst)))
+    print(str(arrayProduct(lst)))
+
+if __name__=="__main__":
+    main()
