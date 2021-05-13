@@ -1,12 +1,9 @@
-list = []
-
-n = int(input("Enter the number of elements : "))
-
-sum = 0
-
-for i in range(0,n):
-    ele = int(input())
-    list.append(ele)
-    sum += ele
-
-print("Sum of all the elements of the list : "+ str(sum))
+def arraySum():
+#Python program to add all the array elements using the built-in function
+lst = []
+num = int(input("Enter the size of the array: "))
+print("Enter array elements: ")
+for n in range(num):
+  numbers = int(input())
+  lst.append(numbers)
+print("Sum:", sum(lst))
