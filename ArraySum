@@ -22,6 +22,7 @@ def main():
         lst.append(ele)
     print(str(arraySum(lst)))
     print(str(arrayProduct(lst)))
+    print(reverseArray(lst))
 
 if __name__=="__main__":
     main()
