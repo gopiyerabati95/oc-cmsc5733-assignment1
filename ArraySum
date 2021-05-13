@@ -21,8 +21,8 @@ def main():
         ele = int(input())
         lst.append(ele)
     print(str(arraySum(lst)))
-    print(str(arrayProduct(lst)))
     print(reverseArray(lst))
+    print(str(arrayProduct(lst)))    
 
 if __name__=="__main__":
     main()
