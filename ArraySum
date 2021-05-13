@@ -9,6 +9,10 @@ def arrayProduct(lst):
     for x in lst:
         product = product * x
     return product
+    
+def reverseArray(lst):
+    result=list(reversed(lst))
+    return result    
 
 def main():
     lst = []
@@ -18,6 +22,7 @@ def main():
         lst.append(ele)
     print(str(arraySum(lst)))
     print(str(arrayProduct(lst)))
+    print(reverseArray(lst))
 
 if __name__=="__main__":
     main()
